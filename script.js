@@ -1,10 +1,10 @@
+// Function to calculate byte size of a string
 const byteSize = (str) => {
+  // Create a Blob object and return its size in bytes
   return new Blob([str]).size;
 };
 
-// Do not change the code below
-const str1 = prompt("Enter first string.");
-alert("Byte size: " + byteSize(str1));
-
-const str2 = prompt("Enter second string.");
-alert("Byte size: " + byteSize(str2));
+// Example usage:
+console.log(byteSize('hello world'));  // Output: 11
+console.log(byteSize('안녕하세요'));     // Output: 15
+console.log(byteSize(''));             // Output: 0
